@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>CELLPHARMA</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleJuego360.css">
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+    <script src="js/registro.js"></script>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div class="container fondoRegistro" id="miRegistro">
+            <div class="row">
+                <div class="col-12 texto-right">
+                    <img src="texturas/registro/Recurso 15BOTONES.png" alt="registro01" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12">
+                    <p class="textoRegisto01">
+                        Estimado congresista:<br>Regístrese para participar en la rifa de uno de los 20 certificados de regalo de Amazon.com
+                    </p>
+                    <p class="text-center">
+
+                        <img src="texturas/registro/Recurso 2BOTONES.png" alt="registro01" class="img-fluid">
+                    </p>
+                </div>
+            </div>
+
+            <form name="formregistro" id="formregistro">
+                <div class="md-form">
+                    <input type="text" id="nombre" name="nombre" class="form-control" onkeypress="return permite(event, 'car')">
+                    <label for="form1">*NOMBRE:</label>
+                </div>
+                <div class="md-form">
+                    <input type="text" id="especialidad" name="especialidad" class="form-control" onkeypress="return permite(event, 'car')">
+                    <label for="form1">*ESPECIALIDAD:</label>
+                </div>
+                <div class="md-form">
+                    <input type="text" id="telefono" name="telefono" class="form-control" onkeypress="return permite(event, 'num')">
+                    <label for="form1">*TELÉFONO:</label>
+                </div>
+                <div class="md-form">
+                    <input type="text" id="email" name="email" class="form-control">
+                    <label for="form1">*CORREO:</label>
+                </div>
+            </form>
+            <div class="row">
+                <div class="alert alert-warning" id="errorMsg" role="alert">
+                    A simple warning alert—check it out!
+                </div>
+            </div>
+            <div class="row">
+                <p class="textoRegisto02">
+                    El sorteo se llevará a cabo el sábado 12 de septiembre del 2020, a las 17:00 hs.<br>Recuerde que todos los campos son obligatorios. La rifa es exclusivamente para congresistas registrados. Solo puede participar una vez por un certificado,
+                    en caso de encontrar que sus datos no corresponden, se podrá invalidar su participación.<br><br>
+                    <span>¡Buena suerte!</span>
+                </p>
+            </div>
+
+            <div class="row justify-content-md-center">
+                <div class="text-center">
+                    <!--<button type="button" class="btn btn-primary btn-lg" id="btRegistra">Enviar</button>-->
+                    <a href="javascript:void(0);" id="btRegistra"><img src="texturas/registro/Recurso 3BOTONES.png" alt="enviar"></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <p class="textoRegisto02">
+                    *Campos obligatorios.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="container fondoRegistroGracias" id="miGracias">
+            <div class="row">
+                <div class="col-12 texto-right">
+                    <img src="texturas/registro/Recurso 15BOTONES.png" alt="registro01" class="img-fluid"><br><br><br>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <p class="text-center">
+                    <img src="texturas/registro/Recurso 2BOTONES.png" alt="registro01" class="img-fluid">
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <p class="textoRegisto02">
+                    <span class="text-azul">No. de participación</span><br>
+
+                    <span class="folio text-azul" id="folio">000001</span> <br><br><br>
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <p class="textoRegisto02 text-left">
+                    Le llegará un correo electrónico confirmando su participación, puede llegar a su carpeta de Spam, por favor revíselo.<br>El sábado 12 de septiembre del 2020, a las 17:00 horas, después de la rifa se anunciarán a los ganadores.
+
+                    <br><br>
+                </p>
+            </div>
+
+
+            <div class="row justify-content-md-center">
+                <div class="text-center">
+                    <!--<button type="button" class="btn btn-primary btn-lg" id="btCerrarModal">SALIR</button>-->
+                    <a href="javascript:void(0);"><img src="texturas/registro/Recurso 3BOTONES.png" alt="enviar"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+body, html {
+  height: 100%;
+}
+
+.bgVideos {
+  /* The image used */
+  background-image: url("../texturas/FondoVideos.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.topVideos{
+  padding-top: 200px;
+}
+
+.miRow{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up)  */
+@media (min-width: 992px) {
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
